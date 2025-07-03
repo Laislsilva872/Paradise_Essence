@@ -1,59 +1,333 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paradise Essence</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="shortcut icon" href="./mídia/Imagem_do_WhatsApp_de_2025-03-21_à_s__13.07.12_aad4d9e0-removebg-preview.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paradise Essence</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="shortcut icon" href="./mídia/Imagem_do_WhatsApp_de_2025-03-21_à_s__13.07.12_aad4d9e0-removebg-preview.png" />
 </head>
 <body>
-    <div id="container">
-        <p class="one">Welcome to our online store!</p>
-        <p class="one">English(USD) | Login or register</p>
-        </div>
-    <header>
-      <img src="./mídia/Imagem do WhatsApp de 2025-03-20 à(s) 16.16.52_75d5a448.jpg" alt="">
-      <input type="search" id="search" placeholder="Search here!">
-      <span id="icon-search" class="material-symbols-outlined">search</span>
-      <div id="ball"></div>
-      <span id="person" class="material-symbols-outlined">person</span>
-      <span id="cart" class="material-symbols-outlined">shopping_cart</span>
-    </header>
-    <main>
-        <div id="nav">
-            <div id="all-cat"
-            <button><img id="menu-1" src="./mídia/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="">
-                <p class="two">ALL CATEGORIES</p>
-            </button>
-            </div>
-            <ul id="list">
-                <li><a class="three" href="HOME">HOME</a></li>
-                <li><a class="three" href="SHOP">SHOP</a></li>
-                <li><a class="three" href="PAGES">PAGES</a></li>
-                <li><a class="three" href="BLOG">BLOG</a></li>
-                <li><a class="three" href="ABOUT">ABOUT</a></li>
-            </ul>
-        </div>
-        <table>
-        <tr>
-            <td id="cont-3"><p class="four">TAKE A PERFUME</p>
-                 <hr><p class="five">Up to 25% Off</p>
-                 <hr><p class="five">Order Now </p>
-                 <p class="six">Save price:<p style="color:#DE6262; position: fixed; left:225px; top:71%; font-weight: bold;">$170.00</p>
-                </p>
-                <img id="fst-img" src="./mídia/perfume-removebg-preview.png" alt="">
-            </td>
-            <td id="cont-4">
-                <p class="eight">Pick Your<hr></p>
-                <p class="eight">Items</p>
-                <hr><p class="nine">$190.00</p><hr><a class="ten" href="shop-now">Shop now</a>
-                <img id="scd-img" src="./mídia/perfume3-removebg-preview.png" alt="">
+  <!-- Top Bar -->
+  <div id="top-bar">
+    <p>Welcome to our online store!</p>
+    <p>English (USD) | Login or Register</p>
+  </div>
 
-            </td>
-        </tr>
-        </table>
-    </main>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <img src="mídia/logo.jpg" alt="Logo" class="logo" />
+      <div class="search-container">
+        <input type="search" id="search" placeholder="Search here!" />
+        <span class="material-symbols-outlined icon">search</span>
+      </div>
+      <div class="icons-nav">
+        <span class="material-symbols-outlined icons-nav">person</span>
+        <span class="material-symbols-outlined icons-nav">shopping_cart</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navegação -->
+  <nav id="nav">
+    <div id="all-cat">
+      <button>
+        <img id="menu-1" src="./mídia/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Menu" />
+        <p class="two">ALL CATEGORIES</p>
+      </button>
+    </div>
+    <ul id="list">
+      <li><a class="three" href="index.html">HOME</a></li>
+      <li><a class="three" href="SHOP.html">SHOP</a></li>
+      <li><a class="three" href="BLOG.html">BLOG</a></li>
+      <li><a class="three" href="#">ABOUT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Produtos -->
+  <main>
+    <section class="produtos-container">
+        <div class="produto-grande produto-card">
+          <p class="four">TAKE A PERFUME</p>
+          <p class="five">Up to 25% Off</p>
+          <p class="five">Order Now</p>
+          <p class="six">Save price: <span class="valor-destaque">$170.00</span></p>
+          <img src="./mídia/perfume-removebg-preview.png" alt="Perfume 1">
+        </div>
+      
+          <div class="produto-card">
+            <p class="eight">Pick Your</p>
+            <br>
+            <p class="eight">Items</p>
+            <br>
+            <p class="nine">$170.00</p>
+            <br>
+            <a class="ten" href="#">Shop now</a>
+            <img src="./mídia/Imagem_do_WhatsApp_de_2025-04-11_à_s__21.47.58_70a96490-removebg-preview.png" alt="Perfume 2">
+          </div>
+          <div class="produto-card">
+            <p class="nine-1">Best of</p>
+            <br>
+            <p class="nine-1">Products</p>
+            <br>
+            <p class="nine">$370.00</p>
+            <br>
+            <a class="ten" href="#">Buy now</a>
+            <img src="./mídia/Imagem_do_WhatsApp_de_2025-04-11_à_s__18.59.30_c51cd992-removebg-preview.png" alt="Perfume 3">
+          
+        </div>
+      </section>
+      <div id="dftd"><p>DEAL OF THE DAY</p></div>
+
+      <section id="cont-2">
+        <div class="produto-card">
+          <span class="selo-new">New</span>
+          <img src="mídia/perfume6.jpg" alt="Perfume 1">
+          <div class="contador">
+            <div><strong>00</strong><span>DAYS</span></div>
+            <div><strong>00</strong><span>HRS</span></div>
+            <div><strong>00</strong><span>MINS</span></div>
+            <div><strong>00</strong><span>SECS</span></div>
+          </div>
+          <p class="nome-produto">Bibliotheque</p>
+          <div class="avaliacao">⭐⭐⭐☆☆</div>
+          <div class="preco">
+            <span class="preco-antigo">$105</span>
+            <span class="preco-desconto">$65</span>
+          </div>
+        </div>
+      
+        <div class="produto-card">
+          <span class="selo-new">New</span>
+          <img src="./mídia/perfume2.jpg" alt="Perfume 2">
+          <div class="contador">
+            <div><strong>00</strong><span>DAYS</span></div>
+            <div><strong>00</strong><span>HRS</span></div>
+            <div><strong>00</strong><span>MINS</span></div>
+            <div><strong>00</strong><span>SECS</span></div>
+          </div>
+          <p class="nome-produto">Dunas De Un</p>
+          <div class="avaliacao">⭐⭐⭐☆☆</div>
+          <div class="preco">
+            <span class="preco-antigo">$125</span>
+            <span class="preco-desconto">$85</span>
+          </div>
+        </div>
+      
+        <div class="produto-card">
+          <span class="selo-new">New</span>
+          <img src="./mídia/perfume5.jpg" alt="Perfume 3">
+          <div class="contador">
+            <div><strong>00</strong><span>DAYS</span></div>
+            <div><strong>00</strong><span>HRS</span></div>
+            <div><strong>00</strong><span>MINS</span></div>
+            <div><strong>00</strong><span>SECS</span></div>
+          </div>
+          <p class="nome-produto">Cuerpo Eau</p>
+          <div class="avaliacao">⭐⭐⭐⭐☆</div>
+          <div class="preco">
+            <span class="preco-antigo">$135</span>
+            <span class="preco-desconto">$105</span>
+          </div>
+        </div>
+      
+        <div class="produto-card">
+          <span class="selo-new">New</span>
+          <img src="./mídia/perfume4.jpg" alt="Perfume 4">
+          <div class="contador">
+            <div><strong>00</strong><span>DAYS</span></div>
+            <div><strong>00</strong><span>HRS</span></div>
+            <div><strong>00</strong><span>MINS</span></div>
+            <div><strong>00</strong><span>SECS</span></div>
+          </div>
+          <p class="nome-produto">Graceful Diamond</p>
+          <div class="avaliacao">⭐⭐⭐☆☆</div>
+          <div class="preco">
+            <span class="preco-antigo">$205</span>
+            <span class="preco-desconto">$95</span>
+          </div>
+        </div>
+      </section>
+      <section id="cont-3">
+        <div class="card">
+          <div class="card-texto">
+            <span class="Destaque">TOP STAFF PICK</span>
+            <h2 class="titulo">Best Collection</h2>
+            <p class="descricao">Proin interdum magna primis id consequal</p>
+            <a href="#" class="botao">SHOP NOW</a>
+          </div>
+          <div class="card-imagem">
+            <img src="mídia/bedperfume1.png" alt="Perfume">
+          </div>
+          <div class="card-1">
+          <div class="card-texto">
+             <span class="Destaque"</span>
+             <h2 class="titulo">Maybe You've<br>Earned It</h2>
+             <p class="descricao">Use code:<strong>PARADISE</strong>
+             Get 25%<br>Off for all items!</p>
+             <a href="#" class="botao">SHOP NOW</a>
+          </div>
+          </div>
+          <div class="card-imagem-1">
+            <img src="mídia/bedperfume2.png" alt="perfume">
+          </div>
+          </div>
+        </section>
+        <section id="cont-4">
+          <div class="content">
+            <img src="mídia/banner.perfumes.jpg" alt="perfume" class="img-left">
+        
+            <div class="text-center">
+              <h2 class="titulo-1">Collection Arrived</h2>
+              <p class="descricao-1">You have no items & Are you <br> ready to use? come & shop with us!</p>
+              <p class="descricao-1">Price from: <strong class="price">$45.00</strong></p>
+              <a href="#" class="botao-1">SHOP NOW</a>
+            </div>
+        
+            <img src="mídia/banner.perfumes2.jpg" alt="perfume" class="img-right">
+          </div>
+        </section>
+        
+        <div id="button">
+          <a href="#" class="botao-2">Bestseller</a>
+          <a href="#" class="botao-2">New Arrivals</a>
+          <a href="#" class="botao-2">Top Rated</a>
+        </div>
+
+        <section id="cont-5">
+          <div class="produto-card-1">
+            <img src="mídia/perf1-removebg-preview.png" alt="Perfume 1">
+            <p class="nome-produto">Bibliotheque</p>
+            <div class="avaliacao">⭐⭐⭐☆☆</div>
+            <div class="preco">
+              <span class="preco-antigo">$105</span>
+              <span class="preco-desconto">$65</span>
+            </div>
+          </div>
+        
+          <div class="produto-card-1">
+            <img src="mídia/perf2-removebg-preview.png" alt="Perfume 2">
+            <p class="nome-produto">Dunas De Un</p>
+            <div class="avaliacao">⭐⭐⭐☆☆</div>
+            <div class="preco">
+              <span class="preco-antigo">$125</span>
+              <span class="preco-desconto">$85</span>
+            </div>
+          </div>
+        
+          <div class="produto-card-1">
+            <img src="mídia/perf3-removebg-preview (1).png" alt="Perfume 3">
+            <p class="nome-produto">Cuerpo Eau</p>
+            <div class="avaliacao">⭐⭐⭐⭐☆</div>
+            <div class="preco">
+              <span class="preco-antigo">$135</span>
+              <span class="preco-desconto">$105</span>
+            </div>
+          </div>
+          <div class="produto-card-1">
+            <img src="mídia/perf4-removebg-preview.png" alt="Perfume 1">
+            <p class="nome-produto">Bibliotheque</p>
+            <div class="avaliacao">⭐⭐⭐☆☆</div>
+            <div class="preco">
+              <span class="preco-antigo">$105</span>
+              <span class="preco-desconto">$65</span>
+            </div>
+          </div>
+        
+          <div class="produto-card-1">
+            <img src="mídia/perf5-removebg-preview.png" alt="Perfume 2">
+            <p class="nome-produto">Dunas De Un</p>
+            <div class="avaliacao">⭐⭐⭐☆☆</div>
+            <div class="preco">
+              <span class="preco-antigo">$125</span>
+              <span class="preco-desconto">$85</span>
+            </div>
+          </div>
+        
+          <div class="produto-card-1">
+            <img src="mídia/perf6-removebg-preview.png" alt="Perfume 3">
+            <p class="nome-produto">Cuerpo Eau</p>
+            <div class="avaliacao">⭐⭐⭐⭐☆</div>
+            <div class="preco">
+              <span class="preco-antigo">$135</span>
+              <span class="preco-desconto">$105</span>
+            </div>
+          </div>
+            <div class="produto-card-1">
+              <img src="mídia/perf7-removebg-preview.png" alt="Perfume 1">
+              <p class="nome-produto">Bibliotheque</p>
+              <div class="avaliacao">⭐⭐⭐☆☆</div>
+              <div class="preco">
+                <span class="preco-antigo">$105</span>
+                <span class="preco-desconto">$65</span>
+              </div>
+            </div>
+          
+            <div class="produto-card-1">
+              <img src="mídia/perf8-removebg-preview (1).png" alt="Perfume 2">
+              <p class="nome-produto">Dunas De Un</p>
+              <div class="avaliacao">⭐⭐⭐☆☆</div>
+              <div class="preco">
+                <span class="preco-antigo">$125</span>
+                <span class="preco-desconto">$85</span>
+              </div>
+            </div>
+          
+            <div class="produto-card-1">
+            
+              <img src="mídia/perf9-removebg-preview.png" alt="Perfume 3">
+              <p class="nome-produto">Cuerpo Eau</p>
+              <div class="avaliacao">⭐⭐⭐⭐☆</div>
+              <div class="preco">
+                <span class="preco-antigo">$135</span>
+                <span class="preco-desconto">$105</span>
+              </div>
+            </div>
+            
+            <div class="produto-card-1">
+              <img src="mídia/perfume-removebg-preview.png" alt="Perfume 1">
+              <p class="nome-produto">Bibliotheque</p>
+              <div class="avaliacao">⭐⭐⭐☆☆</div>
+              <div class="preco">
+                <span class="preco-antigo">$105</span>
+                <span class="preco-desconto">$65</span>
+              </div>
+            </div>
+      </section>
+      <section id="informacoes">
+        <div class="info">
+          <div class="info-1">
+            <div class="icons">
+              <span class="material-symbols-outlined" class="rocket">rocket_launch</span>
+            </div>
+            <div class="info-text">
+            <h3 class="titulo-2">EU FREE DELIVERY</h3>
+            <p class="descricao-2">Free Delivery on all order from EU <br> with price more than $90.00</p>
+            </div>
+          </div>
+          <div class="info-1">
+            <div class="icons">
+              <span class="material-symbols-outlined" class="rocket">restart_alt</span>
+            </div>
+            <div class="info-text">
+            <h3 class="titulo-2">MONEY GUARANTEE</h3>
+            <p class="descricao-2">30 Days money back guarantee <br> no question asked</p>
+            </div>
+          </div>
+          <div class="info-1">
+            <div class="icons">
+              <span class="material-symbols-outlined" class="rocket">key</span>
+            </div>
+            <div class="onfo-text">
+            <h3 class="titulo-2">ONLINE SUPPORT 24/7</h3>
+            <p class="descricao-2">We're here to support to you. <br> Let's shopping now!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+  </main>
 </body>
 </html>
